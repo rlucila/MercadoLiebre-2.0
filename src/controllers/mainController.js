@@ -21,7 +21,8 @@ const controller = {
 		return res.render ('results', {
 			products : products.filter( product => product.name.toLowerCase().includes(req.query.keywords.toLowerCase())),
 			toDiscount,
-			toThousand
+			toThousand,
+			keywords : req.query.keywords
 		})
 	},
 };

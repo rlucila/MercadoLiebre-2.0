@@ -68,7 +68,7 @@
 							 </figure>
 							 <article class="product-box_data">
 								<% if (product.discount > 0) { %>
-									<h2>$<%= toThousand(product.price,product.discount)%>  </h2>
+									<h2>$<%= toDiscount(product.price, product.discount)%> </h2>
 									<span> <%= product.discount %> % OFF</span>
 								<% } else { %>
 									<h2>$ <%= toThousand(product.price) %>  </h2>
